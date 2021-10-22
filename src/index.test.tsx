@@ -1,7 +1,10 @@
-import { ExampleComponent } from '.'
+import useHowler from '.'
 
 describe('ExampleComponent', () => {
   it('is truthy', () => {
-    expect(ExampleComponent).toBeTruthy()
+    const props = useHowler({
+      src: ['./test.wav']
+    })
+    console.log(props)
   })
 })

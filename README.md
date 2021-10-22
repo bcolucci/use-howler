@@ -1,9 +1,5 @@
 # use-howler
 
-> Made with create-react-library
-
-[![NPM](https://img.shields.io/npm/v/use-howler.svg)](https://www.npmjs.com/package/use-howler) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
-
 ## Install
 
 ```bash
@@ -13,15 +9,23 @@ npm install --save use-howler
 ## Usage
 
 ```tsx
-import React, { Component } from 'react'
+import React, { useState } from 'react'
+import useHowler from 'use-howler'
 
-import MyComponent from 'use-howler'
-import 'use-howler/dist/index.css'
+function App() {
+  const sound = useHowler({ src: './sample.wav' })
+  const [playingId, setPlayingId] = useState<number | undefined>()
 
-class Example extends Component {
-  render() {
-    return <MyComponent />
-  }
+  return (
+    <div>
+      Use Howler
+      <p>
+        <button onClick={() => setPlayingId(sound.togglePlay(playingId))}>
+          {playingId ? 'Stop' : 'Play'}
+        </button>
+      </p>
+    </div>
+  )
 }
 ```
 
