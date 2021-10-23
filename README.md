@@ -1,6 +1,6 @@
 # Howler react hook (useHowler)
 
-Please refer to [Howl documentation](https://github.com/goldfire/howler.js) for more details.
+Please refer to [Howler documentation](https://github.com/goldfire/howler.js) for more details.
 
 ## Install
 
