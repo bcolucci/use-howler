@@ -8,12 +8,9 @@ function App() {
 
   return (
     <div>
-      Use Howler
-      <p>
-        <button onClick={() => setPlayingId(sound.togglePlay(playingId))}>
-          {playingId ? 'Stop' : 'Play'}
-        </button>
-      </p>
+      <button onClick={() => setPlayingId(sound.togglePlay(playingId))}>
+        {playingId ? 'Stop' : 'Play'}
+      </button>
     </div>
   )
 }

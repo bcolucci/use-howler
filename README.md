@@ -1,4 +1,6 @@
-# use-howler
+# Howler react hook (useHowler)
+
+Please refer to [Howl documentation](https://github.com/goldfire/howler.js) for more details.
 
 ## Install
 
@@ -18,17 +20,10 @@ function App() {
 
   return (
     <div>
-      Use Howler
-      <p>
-        <button onClick={() => setPlayingId(sound.togglePlay(playingId))}>
-          {playingId ? 'Stop' : 'Play'}
-        </button>
-      </p>
+      <button onClick={() => setPlayingId(sound.togglePlay(playingId))}>
+        {playingId ? 'Stop' : 'Play'}
+      </button>
     </div>
   )
 }
 ```
-
-## License
-
-MIT © [](https://github.com/)
